@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aftab AI</title>
+</head>
+<body>
+  <h1>Welcome to Aftab AI 🤖</h1>
+  <p>My first AI project!</p>
+
+  <input id="message" placeholder="Write your question">
+  <button onclick="reply()">Send</button>
+  <p id="answer"></p>
+
+  <script>
+    function reply() {
+      const question = document.getElementById("message").value;
+      document.getElementById("answer").textContent =
+        "Aftab AI: Hello! You said: " + question;
+    }
+  </script>
+</body>
+</html>
